@@ -7,12 +7,12 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
       {options.map(el => {
-          <button
+        return <button
             key={el}
             name={el}
             onClick={onLeaveFeedback}
           >
-            {label}
+            {el}
           </button>
       })}
     </div>

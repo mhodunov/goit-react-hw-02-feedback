@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Section from './Section';
-import Statistics from './Statistics';
-import FeedbackOptions from './FeedbackOptions';
-import Notification from './Notification';
+import Section from './Section/Section.js';
+import Statistics from './Statistics/Statistics.js';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions.js';
+import Notification from './Notification/Notification.js';
 
 class App extends Component {
 
@@ -57,7 +57,6 @@ class App extends Component {
       </>
     );
   }
-}
 }
 
 export default App;
