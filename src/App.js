@@ -4,6 +4,8 @@ import Statistics from './Statistics/Statistics.js';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions.js';
 import Notification from './Notification/Notification.js';
 
+import './App.css';
+
 class App extends Component {
 
   state = {
@@ -34,7 +36,7 @@ class App extends Component {
     const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
-      <>
+      <div className="wrapper">
         <Section title="Please leave your feedback">
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
@@ -54,7 +56,7 @@ class App extends Component {
             <Notification />
             )}
         </Section>
-      </>
+      </div>
     );
   }
 }
